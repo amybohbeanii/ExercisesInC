@@ -20,3 +20,12 @@ Chapter 2:
 3. The primary purpose of process abstraction is it allows users to use complicated systems and it gives the illusion of simplicity.
 4. The kernel is a part of the Operating System that has core capabilities.
 5. A Daemon is a helper.
+
+
+
+
+What are two ways users can put in effort to optimize code? (draws from ThinkOS ch1 question 4)
+1. user can rearrange code
+2. user can write better algorithms
+What should you use to debug a segmentation fault? (draws from ThinkOS ch1 question 7)
+1. gdb
