@@ -23,6 +23,7 @@ Chapter 2:
 
 
 
+Exam question(s) and solution
 
 What are two ways users can put in effort to optimize code? (draws from ThinkOS ch1 question 4)
 1. user can rearrange code
