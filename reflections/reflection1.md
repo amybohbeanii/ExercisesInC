@@ -9,6 +9,7 @@ Links to Head First C exercises
 
 I worked on exercise1.
 https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex01
+
 I also worked on exercise2, the file is called stack2.c
 https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex02
 
