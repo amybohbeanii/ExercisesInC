@@ -6,6 +6,7 @@ We were prepared for Sprint1 review and received full credit. For the two criter
 Our activity throughout the sprint changed because we expected everyone to be on track, but some tasks took us longer than expected. For example, researching about cycloids, OpenGL, and physics engines took us a long time to understand because majority of our team members have never worked with this topic or software. 
 
 Links to Head First C exercises
+
 I worked on exercise1.
 https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex01
 
