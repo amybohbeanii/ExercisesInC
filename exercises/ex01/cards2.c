@@ -1,8 +1,8 @@
 /*******************************************************/
-/* Counts cards, modified into 3 methods.	           */
+/* Counts cards, modified into 3 methods.	       */
 /* Amy Wu, 2017.                                       */
 /* Compile: gcc -ansi -Wall -o cards2 cards2.c         */
-/* Run: ./cards2 									   */
+/* Run: ./cards2 				       */
 /* Compile and run: gcc cards2.c -o cards2 && ./cards2 */
 /* Compile2: gcc -ansi -pedantic -Wall cards2.c        */
 /*******************************************************/
@@ -46,7 +46,7 @@ int counter(int count, int val){
 /* Prints the number of cards */
 void printstatement(count){
  	printf("Current count: %i\n", count); 
-}	
+}		
 
 /* Loops to count number of cards */
 int main(){
