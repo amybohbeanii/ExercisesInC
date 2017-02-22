@@ -11,8 +11,7 @@ I am hoping that our team kaizen discussed during this meeting will make us more
 
 ### Links to HFC exercises
 
-I worked on exercise2.5 and exercise 3:
- * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex02.5
+I worked on exercise 3:
  * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex03
 
 I want to point out that I realized my mistakes I made in reflection1 based on the evaluation feedback. I did not modify the original file, instead, I created a separate file. I am more familiar with version control now.
