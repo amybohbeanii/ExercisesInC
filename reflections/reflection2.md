@@ -11,7 +11,7 @@ I am hoping that our team kaizen discussed during this meeting will make us more
 
 ### Links to HFC exercises
 
-I worked on exercise2.5 and exercise 3.
+I worked on exercise2.5 and exercise 3:
  * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex02.5
  * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex03
 
