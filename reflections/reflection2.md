@@ -8,3 +8,20 @@ During Sprint3 Meeting1, our team discussed our kaizen.
   * We want to make sure the team gets back together to talk about the task, especially if we had two people working on the same task.
 
 I am hoping that our team kaizen discussed during this meeting will make us more productive, especially over the weekend before the project is due. Personally, I feel behind, because our program is not displaying the ball rolling down our Brachistochrone curve, but that is a task we are in the process of working on starting today. I think the reason we are behind is because there are many tasks at hand. Another big reason we are behind is there was little communication about what and how certain tasks needed to be done. 
+
+### Links to HFC exercises
+
+I worked on exercise2.5.
+ * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex02.5
+I also worked on exercise 3
+ * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex03
+
+I want to point out that I realized my mistakes I made in reflection1 based on the evaluation feedback. I did not modify the original file, instead, I created a separate file. I am more familiar with version control now.
+
+### TOS reading questions and answers
+
+I have taken the advice based on the evaluation feedback for reflection1 to have my TOS reading questions and answers in a separate folder and file. During sprint2, I worked on TOS chapters 3 and 4:
+ * https://github.com/amybohbeanii/ExercisesInC/blob/master/thinkos/3&4.md
+ 
+### Exam questions and solutions
+
