@@ -6,4 +6,5 @@ During Sprint3 Meeting1, our team discussed our kaizen.
   * To be more active in conversing about the project. In Sprint 2 Meeting3 because we had a Snow Day, we decided to have a Skype meeting instead, which went well.
   * We want to keep dividing up work by having two people work on the same tasks, so that it can be done faster. 
   * We want to make sure the team gets back together to talk about the task, especially if we had two people working on the same task.
+
 I am hoping that our team kaizen discussed during this meeting will make us more productive, especially over the weekend before the project is due. Personally, I feel behind, because our program is not displaying the ball rolling down our Brachistochrone curve, but that is a task we are in the process of working on starting today. I think the reason we are behind is because there are many tasks at hand. Another big reason we are behind is there was little communication about what and how certain tasks needed to be done. 
