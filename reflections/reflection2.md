@@ -11,7 +11,8 @@ I am hoping that our team kaizen discussed during this meeting will make us more
 
 ### Links to HFC exercises
 
-I worked on exercise 3:
+During this sprint, it got really chaotic and our team is pretty behind. With having an Olin Monday class today and another Olin class tomorrow, and with the project due on Monday, I wanted to put completing the group project as my first priority.
+I started to worked on exercise 2.5 and 3, but the documentation is confusing for me, so I need to read up on more about regex and tee. I actually have already completed reading the book before the semester started, but with the workload, have been struggling with completing these exercises.
  * https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex03
 
 I want to point out that I realized my mistakes I made in reflection1 based on the evaluation feedback. I did not modify the original file, instead, I created a separate file. I am more familiar with version control now.
