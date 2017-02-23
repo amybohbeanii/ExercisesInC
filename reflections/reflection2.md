@@ -24,9 +24,9 @@ I have taken the advice based on the evaluation feedback for reflection1 to have
 ### Exam questions and solutions
 
  *Question (inspired by HFC CH4): If the makefile is named olin, then which make statement will create the file?
- *A. make
- *B. make olin.c
- *C. make olin
- *D. make olin.o
+ 1. make
+ 2. make olin.c
+ 3. make olin
+ 4. make olin.o
 
 **answer is C**  
