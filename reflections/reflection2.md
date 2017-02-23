@@ -23,7 +23,7 @@ I have taken the advice based on the evaluation feedback for reflection1 to have
  
 ### Exam questions and solutions
 
- *Question (inspired by HFC CH4): If the makefile is named olin, then which make statement will create the file?
+**Question (inspired by HFC CH4): If the makefile is named olin, then which make statement will create the file?**
  1. make
  2. make olin.c
  3. make olin
