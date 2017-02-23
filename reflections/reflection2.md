@@ -29,4 +29,4 @@ I have taken the advice based on the evaluation feedback for reflection1 to have
  3. make olin
  4. make olin.o
 
-**answer is C**  
+**answer is 3**  
