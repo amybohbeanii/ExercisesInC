@@ -16,22 +16,7 @@ https://github.com/amybohbeanii/ExercisesInC/tree/master/exercises/ex02
 **Think OS reading question answers**
 
 I worked on chapters 1 and 2 during sprint1. 
-Chapter 1:
-1. A feature common in interpreted languages but is rare in compiled languages are dynamic types.
-2. Two advantages of static typing over dynamic typing is 1) error checking and 2) quickness of error checking
-3. An example of a static semantic error is spelling a variable name wrong
-4. Two reasons to turn off code optimization is 1) optimization may produce bugs 2) hard to trace code for debugging if you’re not familiar with the language
-5. The results look different on different computers because of different architecture
-6. The errors might look different because the errors are produced in different parts of the process
-7. A segmentation fault is when you cannot read and write to an address.
-Chapter 2: 
-1. A real world example of virtualization is the company Amazon. 
-2. The difference between a program and a process is that the process runs the program.
-3. The primary purpose of process abstraction is it allows users to use complicated systems and it gives the illusion of simplicity.
-4. The kernel is a part of the Operating System that has core capabilities.
-5. A Daemon is a helper.
-
-
+https://github.com/amybohbeanii/ExercisesInC/blob/master/thinkos/1&2.md
 
 **Exam question(s) and solution**
 
