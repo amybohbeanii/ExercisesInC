@@ -4,9 +4,9 @@ Purpose: Assignment3 Olin College Software Systems course
 Functionality: Program is an implementation of tee command
 Assumptions: I implemented without any options
 	
-Answer to question 3: What slowed me down was trying to fully understand what UNIX 		command tee does. Next time, I would probably try to understand every component that goes into the code before I start coding. I felt I didn't have a clear strategy.
+Answer to question 3: What slowed me down was trying to fully understand what UNIX command tee does.
 
-Answer to question 4: Professional code looks much easier to understand. For example, their refactoring is great. 
+Answer to question 4: The StackOverflow code looks similar
  
 To run: gcc tee.c -o tee && ./tee
 */
