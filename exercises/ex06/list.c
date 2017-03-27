@@ -3,7 +3,7 @@ Based on an example from http://www.learn-c.org/en/Linked_lists
 Copyright 2016 Allen Downey
 License: Creative Commons Attribution-ShareAlike 3.0
 
-Modified by Jiaxuan (Amy) Wu
+Modified by: Jiaxuan (Amy) Wu
 Functionality: Prints out list according to function calls
 */
 
@@ -125,13 +125,14 @@ int remove_by_value(Node **list, int val) {
  */
 void reverse(Node **list) {
    Node *previous, *current, *next;
+    
    previous = NULL;
    current = *list;
    while(current!=NULL){
-   		next = current->next;
-   		current->next = previous;
-   		previous = current;
-   		current = next;
+   	next = current->next;
+   	current->next = previous;
+   	previous = current;
+   	current = next;
    }
    *list = previous;	
 }
