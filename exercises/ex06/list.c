@@ -1,10 +1,10 @@
 /* Example code for Exercises in C.
-
 Based on an example from http://www.learn-c.org/en/Linked_lists
-
 Copyright 2016 Allen Downey
 License: Creative Commons Attribution-ShareAlike 3.0
 
+Modified by Jiaxuan (Amy) Wu
+Functionality: Prints out list according to function calls
 */
 
 #include <stdio.h>
@@ -54,8 +54,19 @@ void print_list(Node **list) {
  * returns: int or -1 if the list is empty
  */
 int pop(Node **list) {
-    // FILL THIS IN!
-    return 0;
+    int retval = -1;
+    Node *next_node = NULL;
+    
+    if(*list == NULL){
+    	return -1;
+    }
+    
+    next_node = (*list)->next;
+    retval = (*list)->val;
+    free(*list);
+    *list = next_node;
+    
+    return retval;
 }
 
 
@@ -65,7 +76,12 @@ int pop(Node **list) {
  * val: value to add
  */
 void push(Node **list, int val) {
-    // FILL THIS IN!
+    Node * new_node;
+    new_node = malloc(sizeof(Node));
+    
+    new_node->val = val;
+    new_node->next = *list;
+    *list = new_node;
 }
 
 
@@ -79,8 +95,25 @@ void push(Node **list, int val) {
  * returns: number of nodes removed
  */
 int remove_by_value(Node **list, int val) {
-    // FILL THIS IN!
-    return 0;
+    Node *previous, *current;
+    
+    if(*list == NULL){
+    	return -1;
+    }
+    if((*list)->val==val){
+    	return pop(list);
+    }
+    previous = current = (*list)->next;
+    while(current){
+    	if(current->val==val){
+    		previous->next=current->next;
+    		free(current);
+    		return val;
+    	}
+    	previous = current;
+    	current = current->next;
+    }
+    return -1;
 }
 
 
@@ -91,7 +124,16 @@ int remove_by_value(Node **list, int val) {
  * list: pointer to pointer to Node
  */
 void reverse(Node **list) {
-    // FILL THIS IN!
+   Node *previous, *current, *next;
+   previous = NULL;
+   current = *list;
+   while(current!=NULL){
+   		next = current->next;
+   		current->next = previous;
+   		previous = current;
+   		current = next;
+   }
+   *list = previous;	
 }
 
 
