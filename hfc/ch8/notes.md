@@ -27,11 +27,12 @@ bank_vault: bank_vault.c libhfsecurity.a
 ```
 
 
-//more examples
-//-c creates object file doesnt link it
-//-L tells compiler where library is stored
-//building program using elliptical.o and the library
-//run: ./elliptical
+#### more examples
+#### -c creates object file doesnt link it
+#### -L tells compiler where library is stored
+#### building program using elliptical.o and the library
+#### run: ./elliptical
+```
 1) create object file call hfcal.o and hfcal.h header is stored in ./includes
 gcc -I./includes -c hfcal.c -o hfcal.o
 2) create object file called elliptical.o
@@ -40,7 +41,7 @@ gcc -I./includes -c elliptical.c -o elliptical.o
 ar -rcs ./libs/libhfcal.a hfcal.o
 4) create elliptical executable
 gcc elliptical.o -L./libs -lhfcal -o elliptical
-
+```
 
 //dynamic libraries
 //pg374 -fPIC flag. 
