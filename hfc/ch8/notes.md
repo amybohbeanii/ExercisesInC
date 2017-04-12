@@ -3,18 +3,18 @@ creating an archive
 */
 
 //encrypt and checksum are stored in file archive named libhfsecurity
-ar -rcs libhfsecurity.a encrypt.o checksum.o
+ * ar -rcs libhfsecurity.a encrypt.o checksum.o
 
 //compiling
-gcc test_code.c -lhfsecurity -o test_code
+ * gcc test_code.c -lhfsecurity -o test_code
 
 //if you saved archive somewhere else
-gcc test_code.c -L/my_lib -lhfsecurity -o test_code
+ * gcc test_code.c -L/my_lib -lhfsecurity -o test_code
 
 //fixing makefile example
 //bank vault program uses these include statements
-#include <encrypt.h>
-#include <checksum.h>
+ * #include <encrypt.h>
+ * #include <checksum.h>
 
 //makefile to build archive
 encrypt.o: encrypt.c
