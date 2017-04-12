@@ -2,14 +2,17 @@
 ### creating an archive
 
 #### encrypt and checksum are stored in file archive named libhfsecurity
- * ar -rcs libhfsecurity.a encrypt.o checksum.o
-
+```
+ar -rcs libhfsecurity.a encrypt.o checksum.o
+```
 #### compiling
- * gcc test_code.c -lhfsecurity -o test_code
-
+```
+gcc test_code.c -lhfsecurity -o test_code
+```
 #### if you saved archive somewhere else
- * gcc test_code.c -L/my_lib -lhfsecurity -o test_code
-
+```
+gcc test_code.c -L/my_lib -lhfsecurity -o test_code
+```
 #### fixing makefile example. bank vault program uses these include statements
  * #include <encrypt.h>
  * #include <checksum.h>
@@ -28,10 +31,10 @@ bank_vault: bank_vault.c libhfsecurity.a
 
 
 #### more examples
-#### -c creates object file doesnt link it
-#### -L tells compiler where library is stored
-#### building program using elliptical.o and the library
-#### run: ./elliptical
+ *  -c creates object file doesnt link it
+ *  -L tells compiler where library is stored
+ *  building program using elliptical.o and the library
+ *  run: ./elliptical
 ```
 1) create object file call hfcal.o and hfcal.h header is stored in ./includes
 gcc -I./includes -c hfcal.c -o hfcal.o
@@ -43,9 +46,10 @@ ar -rcs ./libs/libhfcal.a hfcal.o
 gcc elliptical.o -L./libs -lhfcal -o elliptical
 ```
 
-//dynamic libraries
-//pg374 -fPIC flag. 
-//-shared option tells gcc to convert .o into dynamic library
+#### dynamic libraries
+ * pg374 -fPIC flag. 
+ * -shared option tells gcc to convert .o into dynamic library
+```
 1) compile hfcal.c into .o file
 gcc -I/includes -fPIC -c hfcal.c -o hfcal.o
 2) create dynamic library
@@ -54,11 +58,13 @@ gcc -shared hfcal.o -o
 gcc -I\include -c elliptical.c -o elliptical.o
 4) create elliptical executable
 gcc elliptical.o -L/libs -lhfcal -o elliptical
-
-//continued example
-//hfcal_UK.c and header files #include <stdio.h> #include <hfcal.h>
-//compiling into /usr/local/lib directory
+```
+#### continued example
+ * hfcal_UK.c and header files #include <stdio.h> #include <hfcal.h>
+ * compiling into /usr/local/lib directory
+```
 1) compile hfcal_UK.c into .o file
 gcc -c -fPIC hfcal_UK.c -o hfcal_UK.o
 2) create dynamic library
 gcc -shared hfcal.o -o /usr/local/lib/libhfcal.so
+```
