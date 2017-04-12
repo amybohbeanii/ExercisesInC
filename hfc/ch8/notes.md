@@ -68,3 +68,13 @@ gcc -c -fPIC hfcal_UK.c -o hfcal_UK.o
 2) create dynamic library
 gcc -shared hfcal.o -o /usr/local/lib/libhfcal.so
 ```
+#### using libraries
+ * -lblah looks for an archive named libblah.a
+ #### pros/cons of static and dynamic linking?
+  * static linking is done at compile time
+  * dynamic linking is done at load time
+  * shared libraries reduce size of programs
+  * load and run time performance is enhanced
+  * con is program is must slower.
+  * con is reduction in locality of reference. Libraries may be scattered widely in virtual address space.
+  * major conn for dynamically linked programs is the dependency on compatible library. If library is changed, applications have to be reworked to be compatible with  new version of library or if its removed, then programs using that library wont work at all.
