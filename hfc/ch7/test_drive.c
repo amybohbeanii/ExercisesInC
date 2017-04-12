@@ -55,7 +55,8 @@ int main() {
 	for (i = 0; i < 7; i++) {    
 		printf("Score = %i\n", scores[i]);  
 	}  
-	char *names[] = {"Karen", "Mark", "Brett", "Molly"};  		qsort(names, 4, sizeof(char*), compare_names);  
+	char *names[] = {"Karen", "Mark", "Brett", "Molly"};  		
+	qsort(names, 4, sizeof(char*), compare_names);  
 	puts("These are the names in order:");  
 	for (i = 0; i < 4; i++) {    
 		printf("%s\n", names[i]);  
