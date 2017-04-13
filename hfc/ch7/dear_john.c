@@ -29,6 +29,8 @@ void marriage(response r) {
 	puts("Congratulations! Your last date has contacted");  	puts("us with a proposal of marriage."); 
 }
 
+/* Complex syntax for telling compiler exactly what functions will look like that youre storing in array
+*/
 void(*replies[])(response) = {dump,second_chance,marriage};
 
 int main() {
