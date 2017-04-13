@@ -51,7 +51,12 @@ int main() {
 		default:
 			marriage(r[i]);
 		}
-		*/		
+		*/
+		/* first full parenthesis is like a function "dump" or "marriage"
+			replies like array of function names
+			r[i].type is a value like 0 for DUMP or 2 for MARRIAGE
+			r[i] is passing the response data type
+		*/
 		(replies[r[i].type])(r[i]);
 	}
 	return 0;
