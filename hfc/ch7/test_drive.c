@@ -47,6 +47,8 @@ int compare_names_desc(const void* a, const void* b) {
 	return compare_names(b, a); 
 } 
 
+/* qsort reference: https://www.tutorialspoint.com/c_standard_library/c_function_qsort.htm
+*/
 int main() {  
 	int scores[] = {543,323,32,554,11,3,112};  
 	int i;  
