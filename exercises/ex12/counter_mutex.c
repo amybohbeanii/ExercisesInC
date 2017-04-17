@@ -1,13 +1,15 @@
-/*     This file contains an example program from The Little Book of
-       Semaphores, available from Green Tea Press, greenteapress.com
+/*     
+This file contains an example program from The Little Book of Semaphores, available from Green Tea Press, greenteapress.com
 
-       Copyright 2014 Allen B. Downey
-       License: Creative Commons Attribution-ShareAlike 3.0
+Copyright 2014 Allen B. Downey
+License: Creative Commons Attribution-ShareAlike 3.0
+
 Name: Jiaxuan (Amy) Wu
 Functionality: Runs multiple threads and checks for synchronization errors.
 
 How much overhead does synchronization impose?
-When I commented out print statements from counter_mutex.c and counter.c the times I get are: 3.695s for counter.c and 15.806s for counter_mutex. Synchronization overhead is significant.
+When I commented out print statements from counter_mutex.c and counter.c the times I get are: 
+3.695s for counter.c and 15.806s for counter_mutex. Synchronization overhead is significant.
 */
 
 #include <stdio.h>
