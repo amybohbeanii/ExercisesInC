@@ -1,5 +1,6 @@
 
 ### chapter 9: processes and system calls
+### use ps -ef in terminal to see processes (programs running in memory)
 
 * c programs make system calls if they want to talk to the hardware
 * system calls: functions that live inside OS's kernel. Application causes an exception (by executing a protected instruction) in order to jump into kernel code. The interrupt handler executes code (in kernel mode) on behalf of process, then jumps back into application code. They are functions that your program uses to talk to the kernel
@@ -22,3 +23,15 @@
 1) processes: kernel creates processes, makes sure they get resources needed, and watches when processes get too greedy/crash
 2) memory: kernel can increase vm size by loading/unloading sections of memory to disk. kernel rations amount of memory each process can take
 3) hardware: kernel uses device drivers to talk to equipment plugged into computer. 
+
+## exec()
+* in unistd.h
+* replaces current process. You can give it command line arguments and environment variables. When new program starts, it has same PID (process identifier) as old one. Think of a relay race - program hands over its process to a new program.
+* benefit: removes ambiguity and tells OS precisely which program to run
+* two groups of exec() functions
+* list functions
+ 1) execl(): a list of arguments
+ 2) execlp()
+ 3) execle()
+
+2) array functions
