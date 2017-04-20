@@ -3,17 +3,23 @@
 ### use ps -ef in terminal to see processes (programs running in memory)
 
 * c programs make system calls if they want to talk to the hardware
-* system calls: functions that live inside OS's kernel. Application causes an exception (by executing a protected instruction) in order to jump into kernel code. The interrupt handler executes code (in kernel mode) on behalf of process, then jumps back into application code. They are functions that your program uses to talk to the kernel
+
+## System calls
+* system calls lives in the main OS
+* system calls: functions that live inside OS's kernel. Application causes an exception (by executing a protected instruction) in order to jump into kernel code. The interrupt handler executes code (in kernel mode) on behalf of process, then jumps back into application code. They are functions that your program uses to talk to the kernel. When you make system call, you are calling coe outside your program
+* on some OS, code for system call lives inside kernel of OS. On other OS, maybe stored in a dynamic library
+* making system call generally does not create a new process. It runs some kernel code on your behalf. Exception to this rule is fork, which does create a process.
+* check for errors.
+## examples of system calls
 * printf(), is a system call made to OS to send string of text to screen.
+* system()
+* exec()
 
 ## System()
 * C library function system() spawns a child process and uses it to execute a shell command, which spawns a child process to execute the command
 * system() is a system call that takes a string parameter and executes as if you had typed it on command line... system("gedit");
-* system calls lives in the main OS
-* on some OS, code for system call lives inside kernel of OS. On other OS, maybe stored in a dynamic library
-* making system call generally does not create a new process. It runs some kernel code on your behalf. Exception to this rule is fork, which does create a process.
 
-## system calls have problems
+## system calls (system()) have problems
 1) security problems: deletion of files or lanching of viruses. 
 2) no apostrophes in codemagnets.c example
 3) wrong path variable can cause system() function to call wrong program
@@ -29,7 +35,7 @@
 * replaces current process. You can give it command line arguments and environment variables. When new program starts, it has same PID (process identifier) as old one. Think of a relay race - program hands over its process to a new program.
 * benefit: removes ambiguity and tells OS precisely which program to run
 * two groups of exec() functions
-
+* if exec() function is successful, it changes process so that it runs new program instead of your program. That means program containing the exec() will stop as soon as it runs exec()
 
 | List functions  | How to Use |
 | ------------- | ------------- |
