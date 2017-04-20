@@ -13,10 +13,10 @@
 ## examples of system calls
 * printf(), is a system call made to OS to send string of text to screen.
 * system()
-* exec()
-* fork(): clones the current process. new process is called child process, original process is parent process. copy will have a different PID than original.
+* exec(): replaces the current process
+* fork(): duplicates the current process. new process is called child process, original process is parent process. copy will have a different PID than original.
 ## System()
-* C library function system() spawns a child process and uses it to execute a shell command, which spawns a child process to execute the command
+* C library function system() spawns a child process and uses it to execute a shell command, which spawns a child process to execute the command. However, it gives less control over how program runs.
 * system() is a system call that takes a string parameter and executes as if you had typed it on command line... system("gedit");
 
 ## system calls (system()) have problems
