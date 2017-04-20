@@ -29,9 +29,12 @@
 * replaces current process. You can give it command line arguments and environment variables. When new program starts, it has same PID (process identifier) as old one. Think of a relay race - program hands over its process to a new program.
 * benefit: removes ambiguity and tells OS precisely which program to run
 * two groups of exec() functions
-* list functions
- 1) execl(): a list of arguments
- 2) execlp()
- 3) execle()
+
+
+| List functions  | How to Use |
+| ------------- | ------------- |
+| execl(): a list of arguments  | execl ("/home/flynn/clu", "/home/flynn/clu", "paranoids", "contract", NULL)  |
+| execlp(): a list of arguments and search on the path  | execlp ("clu", "clu", "paranoids", "contract", NULL)  |
+| execle(): a list of arguments and environment variables  | execle ("/home/flynn/clu", "/home/flynn/clu", "paranoids", "contract", NULL, env_vars)  |
 
 2) array functions
