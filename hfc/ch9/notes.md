@@ -42,3 +42,8 @@
 | execv(): an array or vector of arguments  | execv ("/home/flynn/clu", my_args);  |
 | execvp(): array/vector of arguments and search on path | execvp ("clu", my_args);  |
 | execve(): array/vector of arguments and environment variables  | execle ("/home/flynn/clu", my_args, env_vars)  |
+
+## getenv() system call
+* create a set of environment variables as an array of string pointers 
+* char *my_env[] = {"JUICE=peach and apple", NULL}; //each variable in environment is name=value
+* execle(diner_info", "diner_info", "4", NULL, my_env);
