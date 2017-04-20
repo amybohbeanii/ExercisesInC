@@ -37,4 +37,8 @@
 | execlp(): a list of arguments and search on the path  | execlp ("clu", "clu", "paranoids", "contract", NULL)  |
 | execle(): a list of arguments and environment variables  | execle ("/home/flynn/clu", "/home/flynn/clu", "paranoids", "contract", NULL, env_vars)  |
 
-2) array functions
+| Array functions  | How to Use |
+| ------------- | ------------- |
+| execv(): an array or vector of arguments  | execv ("/home/flynn/clu", my_args);  |
+| execvp(): array/vector of arguments and search on path | execvp ("clu", my_args);  |
+| execve(): array/vector of arguments and environment variables  | execle ("/home/flynn/clu", my_args, env_vars)  |
