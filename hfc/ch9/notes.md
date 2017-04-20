@@ -14,7 +14,7 @@
 * printf(), is a system call made to OS to send string of text to screen.
 * system()
 * exec()
-
+* fork(): clones the current process. new process is called child process, original process is parent process. copy will have a different PID than original.
 ## System()
 * C library function system() spawns a child process and uses it to execute a shell command, which spawns a child process to execute the command
 * system() is a system call that takes a string parameter and executes as if you had typed it on command line... system("gedit");
@@ -53,3 +53,31 @@
 * create a set of environment variables as an array of string pointers 
 * char *my_env[] = {"JUICE=peach and apple", NULL}; //each variable in environment is name=value
 * execle(diner_info", "diner_info", "4", NULL, my_env);
+
+## fork() + exec()
+* trick is to call exec() on child process. This way parent process is able to keep running.
+* fork() returns 0 to child process and nonzero value to parent process.
+* child process gets exec()
+* pid_t pid = fork(); //type for storing process IDs
+
+``` 
+/*newshound.c revised to include fork*/
+for (i=0;i<times;i++){
+  char var[255];
+  sprintf(var,"RSS_FEED=%s", feeds[i]);
+  char *vars[] = {var, NULL};
+  pid_t pid = fork(); //clones process
+  if(pid==-1){
+    if (pid==-1){ //problem cloning process
+      fprintf(stderr, "Can't fork process: %s\n", strerror(errno));
+      return 1;
+  }
+  if(!pid){ //same as pid==0, if fork() or code is running child process
+    if(execle("/usr/bin/python","/usr/bin/python", "./rssgossip.py", phrase, NULL, vars) == -1){
+      fprintf(stderr, "Can't run script: %s\n", strerror(errno));
+      return 1;
+     }
+  }
+```
+
+
