@@ -2,7 +2,7 @@
 ### chapter 9: processes and system calls
 
 * c programs make system calls if they want to talk to the hardware
-* system calls: functions that live inside OS's kernel. Application causes an exception (by executing a protected instruction) in order to jump into kernel code. The interrupt handler executes code (in kernel mode) on behalf of process, then jumps back into application code. 
+* system calls: functions that live inside OS's kernel. Application causes an exception (by executing a protected instruction) in order to jump into kernel code. The interrupt handler executes code (in kernel mode) on behalf of process, then jumps back into application code. They are functions that your program uses to talk to the kernel
 * printf(), is a system call made to OS to send string of text to screen.
 
 ## System()
