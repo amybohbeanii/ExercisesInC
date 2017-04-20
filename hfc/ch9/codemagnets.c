@@ -1,4 +1,7 @@
-/*program that writes timestamped text to end of a logfile*/
+/*
+*program that writes timestamped text to end of a logfile
+* gcc codemagnets.c -o codemagnets && ./codemagnets
+*/
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
