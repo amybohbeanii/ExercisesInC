@@ -3,6 +3,13 @@
 Copyright 2014 Allen Downey
 License: Creative Commons Attribution-ShareAlike 3.0
 
+Modified by: Jiaxuan (Amy) Wu
+Date: 4/24/2017
+
+Learning Goal: Fix the leaks using valgrind
+
+gcc -g -O0 list_errors.c -o list_errors
+valgrind --leak-check=yes ./list_errors
 */
 
 #include <stdio.h>
@@ -41,7 +48,10 @@ int pop(Node **head) {
 
     next_node = (*head)->next;
     retval = (*head)->val;
+   	free(*head);
     *head = next_node;
+
+ //   free(next_node);
 
     return retval;
 }
@@ -133,6 +143,17 @@ Node *make_something() {
     return node3;
 }
 
+/*Frees nodes in a list*/
+void free_node(Node *list){
+	Node *node;
+	while(list != NULL){
+		node = list;
+		list = list->next;
+		free(node);
+	}
+}
+
+/*Add in calls to free_node so that memory is not leaked*/
 int main() {
     // make a list of even numbers
     Node *test_list = make_node(2, NULL);
@@ -151,6 +172,7 @@ int main() {
 
     printf("test_list\n");
     print_list(test_list);
+    free_node(test_list);
 
     // make an empty list
     printf("empty\n");
@@ -159,9 +181,10 @@ int main() {
     // add an element to the empty list
     insert_by_index(&empty, 1, 0);
     print_list(empty);
+    free_node(empty);
 
     Node *something = make_something();
-    free(something);
+    free_node(something);
 
     return 0;
 }
