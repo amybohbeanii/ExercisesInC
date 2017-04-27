@@ -72,4 +72,3 @@ close(listener_d);
 
 * create socket for client 493, full solution 497
 
-## HFC12: Threads
