@@ -4,6 +4,10 @@
 3) TOS 10 
 4) Rec reading with TOS 10 is LBOS Ch3 and 4
 
+* lecture 24 talks about producer-consumer
+* LBOS 4.1 solves problem using semphares
+* TOS solves problem POSIX way. Mutex protects access to queue. condition variable singals when queue is non-empty and non-full. real world implementation of synchronization. OO pattern in C
+
 ## TOS 10: POSIX condition variables. Producer/Consumer problem
 
  * Use a condition variable to solve producer-consumer problem
